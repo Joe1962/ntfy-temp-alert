@@ -1,0 +1,15 @@
+- Place script in directory of your choice.
+(example: /root/scripts/)
+
+- Edit the script variables to your use case.
+
+- Edit the path to the sys temperature file for your hardware/OS.
+
+- Make the script executable:
+chmod +x /root/scripts/ntfy-temp-alert.sh
+
+- Set up a call to the script in /etc/crontab.
+(example every 1 minute):
+* * * * * root /root/scripts/ntfy-temp-alert.sh >/dev/null 2>&1
+(example every 5 minutes):
+*/5 * * * * root /root/scripts/ntfy-temp-alert.sh >/dev/null 2>&1
