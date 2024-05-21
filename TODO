@@ -1,0 +1,4 @@
+- Create a variable to set minimum notification frequency (MNF).
+- Implement a flag and counter for last notification, with reset on MNF.
+- Implement optional temperature logging.
+- Optionally generate graph with latest n values to send in alert.
