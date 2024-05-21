@@ -9,7 +9,9 @@
 #
 # set up in /etc/crontab.
 # example every 1 minute:
-# * * * * * root ntfy-temp-alert.sh >/dev/null 2>&1
+# * * * * * root /root/scripts/ntfy-temp-alert.sh >/dev/null 2>&1
+# example every 5 minutes:
+# /5 * * * * root /root/scripts/ntfy-temp-alert.sh >/dev/null 2>&1
 #
 
 # NTFY server parameters:
